@@ -4,25 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio - Gallery</title>
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <header>
-        <h1>Gallery</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="gallery.html">Gallery</a></li>
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <section>
-        <h1>Koleksi Foto</h1>
-        <img src="assets/foto1.jpg" alt="Foto 1" width="240" height="300">
-        <img src="assets/foto2.JPG" alt="Foto 2" width="240" height="300">
-        <img src="assets/foto3.JPG" alt="Foto 3" width="240" height="300">
-    </section>
+<body class="gallery-page" id="gallery-page"></body>
+
+    <!-- Navigation -->
+    <nav class="top-nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Gallery Header -->
+    <div class="gallery-header">
+        <h1>Ini foto-foto saya</h1>
+        <p class="hover-instruction">~ Hover your mouse to view in color ~</p>
+    </div>
+
+    <!-- Gallery Content -->
+    <div class="gallery-container">
+        <div class="gallery-item">
+            <img src="assets/foto1.jpg" alt="Foto 1" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/foto2.JPG" alt="Foto 2" class="gallery-image">
+        </div>
+        <div class="gallery-item">
+            <img src="assets/foto3.JPG" alt="Foto 3" class="gallery-image">
+        </div>
+    </div>
+    <footer class="site-footer">
+        <div class="footer-content">
+            <p>Halaman ini adalah profil singkat saya, dan dibuat untuk memenuhi tugas Pemrograman Web</p>
+            <p>Copyright 2025 Clarissa. All Right Reserved.</p>
+        </div>
+    </footer>
+    <!-- JavaScript -->
+    <script src="interact.js"></script>
 </body>
 </html>
