@@ -190,8 +190,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     if (contactForm) {
         // Validasi form sebelum submit
-        contactForm.addEventListener('submit', function(event) {
-            event.preventDefault(); // Mencegah form submit default
+        form.addEventListener('submit', function(event) {
+    // event.preventDefault(); ✅ Form akan submit ke PHP
             
             // Save the date value before any processing
             const dateField = contactForm.querySelector('.current-date-field');
