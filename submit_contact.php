@@ -14,7 +14,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($koneksi->query($sql) === TRUE) {
         echo "<script>
             alert('Terima kasih telah mengirimkan pesan, Clarissa akan membalas secepatnya');
-            window.location.href = 'contact.php';
+            window.location.href = 'contact.html';
         </script>";
     } else {
         echo "Query gagal: " . $koneksi->error;
